@@ -1,13 +1,11 @@
-'use strict';
+import angular from 'angular';
 
 class MessagesAllController {
-  constructor(msgStore) {
-    this.msgs = msgStore.all();
-  }
+	constructor(msgStore) {
+		this.msgs = msgStore.all();
+	}
 }
 
 export default angular
-  .module('messages.all.controller', [
-    require('commons/msg-store').name,
-  ])
-  .controller('MessagesAllController', MessagesAllController);
+	.module('messages.all.controller', [require('commons/msg-store').name])
+	.controller('MessagesAllController', MessagesAllController);

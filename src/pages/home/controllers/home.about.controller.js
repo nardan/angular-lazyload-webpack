@@ -1,9 +1,7 @@
-'use strict';
+import angular from 'angular';
 
 class HomeAboutController {
-  constructor() {}
+	constructor() {}
 }
 
-export default angular
-  .module('home.about.controller', [])
-  .controller('HomeAboutController', HomeAboutController);
+export default angular.module('home.about.controller', []).controller('HomeAboutController', HomeAboutController);
